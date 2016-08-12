@@ -14,4 +14,10 @@
 
 #define iOS7 ([[[UIDevice currentDevice]systemVersion] doubleValue]>=7.0)
 
+#define RGBColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+//公用头文件
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Extension.h"
+
 #endif /* PrefixHeader_pch */

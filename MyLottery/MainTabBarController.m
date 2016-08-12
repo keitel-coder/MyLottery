@@ -57,7 +57,8 @@
  *  @param to     点击按钮位置
  */
 -(void)tabBar:(MyTabBar *)tabBar didSelectButtonFrom:(int)from to:(int)to{
-    
+    //设置显示的view
+    self.selectedIndex=to;
 }
 
 @end

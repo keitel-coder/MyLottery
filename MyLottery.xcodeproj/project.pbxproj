@@ -11,6 +11,17 @@
 		988C296B1D5B7360007E4123 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C296A1D5B7360007E4123 /* MyTabBar.m */; };
 		988C296E1D5B7561007E4123 /* MyTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C296D1D5B7561007E4123 /* MyTabBarButton.m */; };
 		988C29711D5B8D3D007E4123 /* MyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29701D5B8D3D007E4123 /* MyNavigationController.m */; };
+		988C297D1D5E26CF007E4123 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C297C1D5E26CF007E4123 /* UIImage+Extension.m */; };
+		988C29821D5E279E007E4123 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29811D5E279E007E4123 /* MineViewController.m */; };
+		988C29871D5E2FB9007E4123 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29861D5E2FB9007E4123 /* SettingsController.m */; };
+		988C298D1D5E3E75007E4123 /* SettingsBaseItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C298C1D5E3E75007E4123 /* SettingsBaseItemModel.m */; };
+		988C29911D5E420A007E4123 /* SettingsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29901D5E420A007E4123 /* SettingsGroupModel.m */; };
+		988C29951D5E4DEB007E4123 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29941D5E4DEB007E4123 /* SettingsTableViewCell.m */; };
+		988C29991D5E5382007E4123 /* SettingsArrowItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29981D5E5381007E4123 /* SettingsArrowItemModel.m */; };
+		988C299C1D5E55D2007E4123 /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C299B1D5E55D2007E4123 /* HelpController.m */; };
+		988C299F1D5E5983007E4123 /* SettingsSwitchItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C299E1D5E5983007E4123 /* SettingsSwitchItemModel.m */; };
+		988C29A41D5E6E02007E4123 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29A31D5E6E02007E4123 /* MBProgressHUD.m */; };
+		988C29A71D5E6E80007E4123 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29A61D5E6E80007E4123 /* MBProgressHUD+Extension.m */; };
 		98DE50EF1D043A1900DF4CF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DE50EE1D043A1900DF4CF4 /* main.m */; };
 		98DE50F21D043A1900DF4CF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DE50F11D043A1900DF4CF4 /* AppDelegate.m */; };
 		98DE50F81D043A1900DF4CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DE50F61D043A1900DF4CF4 /* Main.storyboard */; };
@@ -77,6 +88,28 @@
 		988C296F1D5B8D3D007E4123 /* MyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationController.h; sourceTree = "<group>"; };
 		988C29701D5B8D3D007E4123 /* MyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationController.m; sourceTree = "<group>"; };
 		988C29731D5B9065007E4123 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		988C297B1D5E26CF007E4123 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		988C297C1D5E26CF007E4123 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		988C29801D5E279E007E4123 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		988C29811D5E279E007E4123 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		988C29851D5E2FB9007E4123 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		988C29861D5E2FB9007E4123 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		988C298B1D5E3E75007E4123 /* SettingsBaseItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBaseItemModel.h; sourceTree = "<group>"; };
+		988C298C1D5E3E75007E4123 /* SettingsBaseItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsBaseItemModel.m; sourceTree = "<group>"; };
+		988C298F1D5E420A007E4123 /* SettingsGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsGroupModel.h; sourceTree = "<group>"; };
+		988C29901D5E420A007E4123 /* SettingsGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsGroupModel.m; sourceTree = "<group>"; };
+		988C29931D5E4DEB007E4123 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
+		988C29941D5E4DEB007E4123 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
+		988C29971D5E5381007E4123 /* SettingsArrowItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsArrowItemModel.h; sourceTree = "<group>"; };
+		988C29981D5E5381007E4123 /* SettingsArrowItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsArrowItemModel.m; sourceTree = "<group>"; };
+		988C299A1D5E55D2007E4123 /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
+		988C299B1D5E55D2007E4123 /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
+		988C299D1D5E5983007E4123 /* SettingsSwitchItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsSwitchItemModel.h; sourceTree = "<group>"; };
+		988C299E1D5E5983007E4123 /* SettingsSwitchItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsSwitchItemModel.m; sourceTree = "<group>"; };
+		988C29A21D5E6E02007E4123 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		988C29A31D5E6E02007E4123 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		988C29A51D5E6E80007E4123 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		988C29A61D5E6E80007E4123 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
 		98DE50EA1D043A1900DF4CF4 /* MyLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DE50EE1D043A1900DF4CF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98DE50F01D043A1900DF4CF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +181,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		988C29761D5E2582007E4123 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				988C29A01D5E6DD9007E4123 /* Lib */,
+				988C29771D5E258B007E4123 /* Categry */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		988C29771D5E258B007E4123 /* Categry */ = {
+			isa = PBXGroup;
+			children = (
+				988C297B1D5E26CF007E4123 /* UIImage+Extension.h */,
+				988C297C1D5E26CF007E4123 /* UIImage+Extension.m */,
+				988C29A51D5E6E80007E4123 /* MBProgressHUD+Extension.h */,
+				988C29A61D5E6E80007E4123 /* MBProgressHUD+Extension.m */,
+			);
+			name = Categry;
+			sourceTree = "<group>";
+		};
+		988C297E1D5E2734007E4123 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				988C297F1D5E2762007E4123 /* Contoroller */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		988C297F1D5E2762007E4123 /* Contoroller */ = {
+			isa = PBXGroup;
+			children = (
+				988C29801D5E279E007E4123 /* MineViewController.h */,
+				988C29811D5E279E007E4123 /* MineViewController.m */,
+			);
+			name = Contoroller;
+			sourceTree = "<group>";
+		};
+		988C29831D5E2F8A007E4123 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				988C29921D5E4DB2007E4123 /* View */,
+				988C29881D5E3DFE007E4123 /* Model */,
+				988C29841D5E2F93007E4123 /* Contotoller */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		988C29841D5E2F93007E4123 /* Contotoller */ = {
+			isa = PBXGroup;
+			children = (
+				988C29851D5E2FB9007E4123 /* SettingsController.h */,
+				988C29861D5E2FB9007E4123 /* SettingsController.m */,
+				988C299A1D5E55D2007E4123 /* HelpController.h */,
+				988C299B1D5E55D2007E4123 /* HelpController.m */,
+			);
+			name = Contotoller;
+			sourceTree = "<group>";
+		};
+		988C29881D5E3DFE007E4123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				988C29961D5E5299007E4123 /* Item */,
+				988C298E1D5E41F2007E4123 /* Group */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		988C298E1D5E41F2007E4123 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				988C298F1D5E420A007E4123 /* SettingsGroupModel.h */,
+				988C29901D5E420A007E4123 /* SettingsGroupModel.m */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		988C29921D5E4DB2007E4123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				988C29931D5E4DEB007E4123 /* SettingsTableViewCell.h */,
+				988C29941D5E4DEB007E4123 /* SettingsTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		988C29961D5E5299007E4123 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				988C298B1D5E3E75007E4123 /* SettingsBaseItemModel.h */,
+				988C298C1D5E3E75007E4123 /* SettingsBaseItemModel.m */,
+				988C29971D5E5381007E4123 /* SettingsArrowItemModel.h */,
+				988C29981D5E5381007E4123 /* SettingsArrowItemModel.m */,
+				988C299D1D5E5983007E4123 /* SettingsSwitchItemModel.h */,
+				988C299E1D5E5983007E4123 /* SettingsSwitchItemModel.m */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		988C29A01D5E6DD9007E4123 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				988C29A11D5E6DE0007E4123 /* MBProgressHUD */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		988C29A11D5E6DE0007E4123 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				988C29A21D5E6E02007E4123 /* MBProgressHUD.h */,
+				988C29A31D5E6E02007E4123 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		98DE50E11D043A1900DF4CF4 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +407,9 @@
 		98DE51621D043D4E00DF4CF4 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				988C29831D5E2F8A007E4123 /* Settings */,
+				988C297E1D5E2734007E4123 /* Mine */,
+				988C29761D5E2582007E4123 /* Other */,
 				98DE51651D043E3D00DF4CF4 /* Hall */,
 				98DE51641D043E3700DF4CF4 /* Main */,
 				98DE51631D043E2400DF4CF4 /* Settings */,
@@ -507,11 +658,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				988C29711D5B8D3D007E4123 /* MyNavigationController.m in Sources */,
+				988C297D1D5E26CF007E4123 /* UIImage+Extension.m in Sources */,
+				988C29951D5E4DEB007E4123 /* SettingsTableViewCell.m in Sources */,
 				988C296E1D5B7561007E4123 /* MyTabBarButton.m in Sources */,
+				988C29991D5E5382007E4123 /* SettingsArrowItemModel.m in Sources */,
+				988C299F1D5E5983007E4123 /* SettingsSwitchItemModel.m in Sources */,
+				988C29871D5E2FB9007E4123 /* SettingsController.m in Sources */,
+				988C299C1D5E55D2007E4123 /* HelpController.m in Sources */,
 				98DE50F21D043A1900DF4CF4 /* AppDelegate.m in Sources */,
 				98DE50EF1D043A1900DF4CF4 /* main.m in Sources */,
 				988C29661D5B5585007E4123 /* MainTabBarController.m in Sources */,
+				988C298D1D5E3E75007E4123 /* SettingsBaseItemModel.m in Sources */,
+				988C29911D5E420A007E4123 /* SettingsGroupModel.m in Sources */,
 				988C296B1D5B7360007E4123 /* MyTabBar.m in Sources */,
+				988C29821D5E279E007E4123 /* MineViewController.m in Sources */,
+				988C29A41D5E6E02007E4123 /* MBProgressHUD.m in Sources */,
+				988C29A71D5E6E80007E4123 /* MBProgressHUD+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +815,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyLottery/PrefixHeader.pch;
 				INFOPLIST_FILE = MyLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ligui.MyLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,6 +831,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyLottery/PrefixHeader.pch;
 				INFOPLIST_FILE = MyLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ligui.MyLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";

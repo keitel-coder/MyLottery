@@ -1,0 +1,16 @@
+//
+//  SettingsController.h
+//  MyLottery
+//
+//  Created by 李贵 on 16/8/13.
+//  Copyright © 2016年 李贵. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SettingsController : UITableViewController
+/**
+ *  数据
+ */
+@property (nonatomic, strong) NSMutableArray *data;
+@end
