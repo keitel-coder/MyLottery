@@ -9,6 +9,7 @@
 #import "SettingsSwitchItemModel.h"
 
 @interface SettingsSwitchItemModel()
+
 /**
  *  切换开关事件
  */
@@ -21,12 +22,14 @@
 @end
 
 @implementation SettingsSwitchItemModel
-+(instancetype)initWithIcon:(NSString *)icon :(NSString *)title :(switchBlock)checkedBlock :(switchBlock)unCheckedBlock{
+
++(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title isRowClickSwitch:(Boolean)rowClickSwitch switchChecked:(switchBlock)switchChecked switchUnChecked:(switchBlock)switchUnChecked{
     SettingsSwitchItemModel *item=[[SettingsSwitchItemModel alloc]init];
     item.icon=icon;
     item.title=title;
-    item.checkedBlock=checkedBlock;
-    item.unCheckedBlock=unCheckedBlock;
+    item.checkedBlock=switchChecked;
+    item.unCheckedBlock=switchUnChecked;
+    [item setRowClickSwitch:rowClickSwitch];
     return item;
 }
 
@@ -38,5 +41,9 @@
     }else {
         self.unCheckedBlock();
     }
+}
+
+-(void)setRowClickSwitch:(Boolean)rowClickSwitch{
+    _rowClickSwitch=rowClickSwitch;
 }
 @end

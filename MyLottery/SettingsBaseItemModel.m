@@ -10,7 +10,7 @@
 
 @implementation SettingsBaseItemModel
 
-+(instancetype)initWithIcon:(NSString *)icon :(NSString *)title{
++(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title{
     SettingsBaseItemModel* item= [[self alloc]init];
     item.icon=icon;
     item.title=title;

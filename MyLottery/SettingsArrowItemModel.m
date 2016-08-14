@@ -10,18 +10,29 @@
 
 @implementation SettingsArrowItemModel
 
-+(instancetype)initWithIcon:(NSString *)icon :(NSString *)title :(Class)targetClass{
++(instancetype)initWithTitle:(NSString *)title targetClass:(Class)targetClass{
     SettingsArrowItemModel *item=[[SettingsArrowItemModel alloc]init];
-    item.icon=icon;
     item.title=title;
     item.targetClass=targetClass;
     return  item;
 }
 
-+(instancetype)initWithTitle:(NSString *)title :(Class)targetClass{
++(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title targetClass:(Class)targetClass{
+    SettingsArrowItemModel *item=[SettingsArrowItemModel initWithTitle:title targetClass:targetClass];
+    item.icon=icon;
+    return item;
+}
+
++(instancetype)initWithTitle:(NSString *)title click:(voidBlock)click{
     SettingsArrowItemModel *item=[[SettingsArrowItemModel alloc]init];
     item.title=title;
-    item.targetClass=targetClass;
-    return  item;
+    item.click=click;
+    return item;
+}
+
++(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title click:(voidBlock)click{
+    SettingsArrowItemModel *item=[SettingsArrowItemModel initWithTitle:title click:click];
+    item.icon=icon;
+    return item;
 }
 @end

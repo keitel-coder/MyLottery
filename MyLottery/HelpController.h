@@ -2,12 +2,12 @@
 //  HelpController.h
 //  MyLottery
 //
-//  Created by 李贵 on 16/8/13.
+//  Created by 李贵 on 16/8/14.
 //  Copyright © 2016年 李贵. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SettingsBaseController.h"
 
-@interface HelpController : UIViewController
+@interface HelpController : SettingsBaseController
 
 @end

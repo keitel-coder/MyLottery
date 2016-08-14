@@ -7,11 +7,12 @@
 //
 
 #import "SettingsController.h"
+#import "SettingsBaseController.h"
 #import "SettingsBaseItemModel.h"
-#import "SettingsGroupModel.h"
-#import "SettingsTableViewCell.h"
 #import "SettingsArrowItemModel.h"
 #import "SettingsSwitchItemModel.h"
+#import "SettingsArrowItemModel.h"
+#import "SettingsGroupModel.h"
 #import "HelpController.h"
 
 @interface SettingsController()<UITableViewDelegate>
@@ -20,19 +21,9 @@
 
 @implementation SettingsController
 
--(instancetype)init{
-    return [super initWithStyle:UITableViewStyleGrouped];
-}
-
--(instancetype)initWithStyle:(UITableViewStyle)style{
-    return [super initWithStyle:style];
-}
-
 -(void)viewDidLoad{
     self.title =@"设置";
     //  backgroundView 的优先级 >  backgroundColor
-    self.tableView.backgroundView = nil;
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
     [self setGroup1Data];
     [self setGroup2Data];
 }
@@ -43,15 +34,23 @@
 -(void) setGroup1Data{
     //设置数据
     NSMutableArray *items=[NSMutableArray array];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MorePush" :@"推送和提醒":[HelpController class]]];
-    [items addObject:[SettingsSwitchItemModel initWithIcon:@"handShake" :@"摇一摇机选" :^{
+    
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MorePush" title:@"推送和提醒" click:^{
+        [MBProgressHUD showSuccess:@"点击了推送和提醒"];
+    }]];
+    
+    [items addObject:[SettingsSwitchItemModel initWithIcon:@"handShake" title:@"摇一摇机选" isRowClickSwitch:YES switchChecked:^{
         [MBProgressHUD showSuccess:@"打开了开关"];
-    } :^{
+    } switchUnChecked:^{
         [MBProgressHUD showSuccess:@"关闭了开关"];
-    }]
-     ];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"sound_Effect" :@"声音效果":[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithTitle:@"测试效果" :[HelpController class]]];
+    }]];
+    
+    SettingsSwitchItemModel* soundItem= [SettingsSwitchItemModel initWithIcon:@"sound_Effect" title:@"声音效果" isRowClickSwitch:YES switchChecked:^{
+        [MBProgressHUD showSuccess:@"打开了声音效果"];
+    } switchUnChecked:^{
+        [MBProgressHUD showSuccess:@"关闭了声音效果"];
+    }];
+    [items addObject:soundItem];
     SettingsGroupModel *group=[[SettingsGroupModel alloc]init];
     group.items=items;
     [self.data addObject:group];
@@ -63,89 +62,35 @@
 -(void) setGroup2Data{
     //设置数据
     NSMutableArray *items=[NSMutableArray array];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreHelp" :@"帮助":[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreShare" :@"分享":[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreMessage" :@"查看消息":[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreNetease" :@"产品推荐":[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreUpdate" :@"检查新版本":[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreAbout" :@"关于":[HelpController class]]];
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreHelp" title:@"帮助" targetClass:[HelpController class]]];
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreShare" title:@"分享" targetClass:[HelpController class]]];
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreMessage" title:@"查看消息" targetClass:[HelpController class]]];
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreNetease" title:@"产品推荐" targetClass:[HelpController class]]];
+    SettingsBaseItemModel *updateItem=[SettingsBaseItemModel initWithIcon:@"MoreUpdate" title:@"检查新版本"];
+    __unsafe_unretained typeof (self) selfVC=self;
+    updateItem.click=^{
+        [MBProgressHUD showMessage:@"正在拼命检查中..."];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 移除HUD
+            [MBProgressHUD hideHUD];
+            
+            // 提醒有没有新版本
+            [MBProgressHUD showSuccess:@"当前版本已经是最新版本"];
+            
+            //设置最新版本
+            //刷新表格
+            SettingsGroupModel *group= selfVC.data[selfVC.selectedIndex.section];
+            SettingsBaseItemModel *model=group.items[selfVC.selectedIndex.row];
+            model.title=@"已是最新版本";
+            [selfVC.tableView reloadData];
+        });
+    };
+    [items addObject:updateItem];
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreAbout" title:@"关于" targetClass:[HelpController class]]];
     
     SettingsGroupModel *group=[[SettingsGroupModel alloc]init];
     group.items=items;
     [self.data addObject:group];
 }
-
--(NSMutableArray*)data{
-    if(_data==nil){
-        _data=[NSMutableArray array];
-    }
-    return _data;
-}
-
-#pragma table数据源方法
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    SettingsGroupModel *group =self.data[section];
-    return group.items.count;
-}
-
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.data.count;
-}
-
-/**
- *  返回cell
- *
- *  @param tableView tableView
- *  @param indexPath indexPath
- *
- *  @return cell
- */
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    SettingsGroupModel *group =self.data[indexPath.section];
-    SettingsBaseItemModel *item= group.items[indexPath.row];
-    return [SettingsTableViewCell initWithTableView:tableView :item];
-}
-
-/**
- *  组头标题
- *
- *  @param tableView tableView
- *  @param section   组
- *
- *  @return 组头标题
- */
--(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    SettingsGroupModel *group= self.data[section];
-    return group.headerTitle;
-}
-
-/**
- *  组尾文字
- *
- *  @param tableView tableView
- *  @param section   组
- *
- *  @return 组尾文字
- */
--(NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    SettingsGroupModel *group= self.data[section];
-    return group.footerTitle;
-}
-
-#pragma table数据源代理方法
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];  //取消选中这一行
-    
-    SettingsGroupModel *group= self.data[indexPath.section];
-    SettingsBaseItemModel *item=group.items[indexPath.row];
-    //跳转
-    if([item isKindOfClass:[SettingsArrowItemModel class]]){
-        SettingsArrowItemModel*itemModel=(SettingsArrowItemModel*)item;
-        UIViewController *vc=[[itemModel.targetClass alloc]init];
-        vc.title=itemModel.title;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-}
-
 
 @end

@@ -18,10 +18,13 @@
 		988C29911D5E420A007E4123 /* SettingsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29901D5E420A007E4123 /* SettingsGroupModel.m */; };
 		988C29951D5E4DEB007E4123 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29941D5E4DEB007E4123 /* SettingsTableViewCell.m */; };
 		988C29991D5E5382007E4123 /* SettingsArrowItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29981D5E5381007E4123 /* SettingsArrowItemModel.m */; };
-		988C299C1D5E55D2007E4123 /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C299B1D5E55D2007E4123 /* HelpController.m */; };
 		988C299F1D5E5983007E4123 /* SettingsSwitchItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C299E1D5E5983007E4123 /* SettingsSwitchItemModel.m */; };
 		988C29A41D5E6E02007E4123 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29A31D5E6E02007E4123 /* MBProgressHUD.m */; };
 		988C29A71D5E6E80007E4123 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29A61D5E6E80007E4123 /* MBProgressHUD+Extension.m */; };
+		988C29AB1D60C44E007E4123 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 988C29AA1D60C44E007E4123 /* help.json */; };
+		988C29AE1D60C470007E4123 /* HelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29AD1D60C470007E4123 /* HelpModel.m */; };
+		988C29B31D60C541007E4123 /* SettingsBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29B21D60C541007E4123 /* SettingsBaseController.m */; };
+		988C29B61D60C6D0007E4123 /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988C29B51D60C6D0007E4123 /* HelpController.m */; };
 		98DE50EF1D043A1900DF4CF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DE50EE1D043A1900DF4CF4 /* main.m */; };
 		98DE50F21D043A1900DF4CF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DE50F11D043A1900DF4CF4 /* AppDelegate.m */; };
 		98DE50F81D043A1900DF4CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DE50F61D043A1900DF4CF4 /* Main.storyboard */; };
@@ -59,6 +62,7 @@
 		98DE515E1D043C6900DF4CF4 /* cywt.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DE515C1D043C6900DF4CF4 /* cywt.json */; };
 		98DE515F1D043C6900DF4CF4 /* more_project.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DE515D1D043C6900DF4CF4 /* more_project.json */; };
 		98DE51611D043CAC00DF4CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DE51601D043CAC00DF4CF4 /* Assets.xcassets */; };
+		98FEB9971D60CB6E0028A715 /* HtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEB9961D60CB6E0028A715 /* HtmlViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,14 +106,19 @@
 		988C29941D5E4DEB007E4123 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
 		988C29971D5E5381007E4123 /* SettingsArrowItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsArrowItemModel.h; sourceTree = "<group>"; };
 		988C29981D5E5381007E4123 /* SettingsArrowItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsArrowItemModel.m; sourceTree = "<group>"; };
-		988C299A1D5E55D2007E4123 /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
-		988C299B1D5E55D2007E4123 /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
 		988C299D1D5E5983007E4123 /* SettingsSwitchItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsSwitchItemModel.h; sourceTree = "<group>"; };
 		988C299E1D5E5983007E4123 /* SettingsSwitchItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsSwitchItemModel.m; sourceTree = "<group>"; };
 		988C29A21D5E6E02007E4123 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		988C29A31D5E6E02007E4123 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		988C29A51D5E6E80007E4123 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
 		988C29A61D5E6E80007E4123 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		988C29AA1D60C44E007E4123 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		988C29AC1D60C470007E4123 /* HelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpModel.h; sourceTree = "<group>"; };
+		988C29AD1D60C470007E4123 /* HelpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpModel.m; sourceTree = "<group>"; };
+		988C29B11D60C541007E4123 /* SettingsBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBaseController.h; sourceTree = "<group>"; };
+		988C29B21D60C541007E4123 /* SettingsBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsBaseController.m; sourceTree = "<group>"; };
+		988C29B41D60C6D0007E4123 /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
+		988C29B51D60C6D0007E4123 /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
 		98DE50EA1D043A1900DF4CF4 /* MyLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DE50EE1D043A1900DF4CF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98DE50F01D043A1900DF4CF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +163,8 @@
 		98DE515C1D043C6900DF4CF4 /* cywt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cywt.json; sourceTree = "<group>"; };
 		98DE515D1D043C6900DF4CF4 /* more_project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = more_project.json; sourceTree = "<group>"; };
 		98DE51601D043CAC00DF4CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98FEB9951D60CB6E0028A715 /* HtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlViewController.h; sourceTree = "<group>"; };
+		98FEB9961D60CB6E0028A715 /* HtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,10 +242,8 @@
 		988C29841D5E2F93007E4123 /* Contotoller */ = {
 			isa = PBXGroup;
 			children = (
-				988C29851D5E2FB9007E4123 /* SettingsController.h */,
-				988C29861D5E2FB9007E4123 /* SettingsController.m */,
-				988C299A1D5E55D2007E4123 /* HelpController.h */,
-				988C299B1D5E55D2007E4123 /* HelpController.m */,
+				988C29B01D60C508007E4123 /* Settings */,
+				988C29AF1D60C4FB007E4123 /* Help */,
 			);
 			name = Contotoller;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 		988C29881D5E3DFE007E4123 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				988C29A81D60C35F007E4123 /* Help */,
 				988C29961D5E5299007E4123 /* Item */,
 				988C298E1D5E41F2007E4123 /* Group */,
 			);
@@ -294,6 +304,47 @@
 				988C29A31D5E6E02007E4123 /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		988C29A81D60C35F007E4123 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				988C29AC1D60C470007E4123 /* HelpModel.h */,
+				988C29AD1D60C470007E4123 /* HelpModel.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		988C29A91D60C434007E4123 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				988C29AA1D60C44E007E4123 /* help.json */,
+				98DE515C1D043C6900DF4CF4 /* cywt.json */,
+				98DE515D1D043C6900DF4CF4 /* more_project.json */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		988C29AF1D60C4FB007E4123 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				988C29B41D60C6D0007E4123 /* HelpController.h */,
+				988C29B51D60C6D0007E4123 /* HelpController.m */,
+				98FEB9951D60CB6E0028A715 /* HtmlViewController.h */,
+				98FEB9961D60CB6E0028A715 /* HtmlViewController.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		988C29B01D60C508007E4123 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				988C29851D5E2FB9007E4123 /* SettingsController.h */,
+				988C29861D5E2FB9007E4123 /* SettingsController.m */,
+				988C29B11D60C541007E4123 /* SettingsBaseController.h */,
+				988C29B21D60C541007E4123 /* SettingsBaseController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		98DE50E11D043A1900DF4CF4 = {
@@ -398,8 +449,7 @@
 		98DE515B1D043C6900DF4CF4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				98DE515C1D043C6900DF4CF4 /* cywt.json */,
-				98DE515D1D043C6900DF4CF4 /* more_project.json */,
+				988C29A91D60C434007E4123 /* Json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -608,6 +658,7 @@
 				98DE51611D043CAC00DF4CF4 /* Assets.xcassets in Resources */,
 				98DE515F1D043C6900DF4CF4 /* more_project.json in Resources */,
 				98DE51431D043C5D00DF4CF4 /* gdy11_howto.html in Resources */,
+				988C29AB1D60C44E007E4123 /* help.json in Resources */,
 				98DE51411D043C5D00DF4CF4 /* dlt_howto.html in Resources */,
 				98DE51591D043C5D00DF4CF4 /* y11_howto.html in Resources */,
 				98DE51541D043C5D00DF4CF4 /* rule.css in Resources */,
@@ -658,18 +709,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				988C29711D5B8D3D007E4123 /* MyNavigationController.m in Sources */,
+				988C29B61D60C6D0007E4123 /* HelpController.m in Sources */,
 				988C297D1D5E26CF007E4123 /* UIImage+Extension.m in Sources */,
 				988C29951D5E4DEB007E4123 /* SettingsTableViewCell.m in Sources */,
 				988C296E1D5B7561007E4123 /* MyTabBarButton.m in Sources */,
 				988C29991D5E5382007E4123 /* SettingsArrowItemModel.m in Sources */,
 				988C299F1D5E5983007E4123 /* SettingsSwitchItemModel.m in Sources */,
 				988C29871D5E2FB9007E4123 /* SettingsController.m in Sources */,
-				988C299C1D5E55D2007E4123 /* HelpController.m in Sources */,
+				988C29B31D60C541007E4123 /* SettingsBaseController.m in Sources */,
 				98DE50F21D043A1900DF4CF4 /* AppDelegate.m in Sources */,
+				988C29AE1D60C470007E4123 /* HelpModel.m in Sources */,
 				98DE50EF1D043A1900DF4CF4 /* main.m in Sources */,
 				988C29661D5B5585007E4123 /* MainTabBarController.m in Sources */,
 				988C298D1D5E3E75007E4123 /* SettingsBaseItemModel.m in Sources */,
 				988C29911D5E420A007E4123 /* SettingsGroupModel.m in Sources */,
+				98FEB9971D60CB6E0028A715 /* HtmlViewController.m in Sources */,
 				988C296B1D5B7360007E4123 /* MyTabBar.m in Sources */,
 				988C29821D5E279E007E4123 /* MineViewController.m in Sources */,
 				988C29A41D5E6E02007E4123 /* MBProgressHUD.m in Sources */,

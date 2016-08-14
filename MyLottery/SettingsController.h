@@ -6,11 +6,8 @@
 //  Copyright © 2016年 李贵. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SettingsBaseController.h"
 
-@interface SettingsController : UITableViewController
-/**
- *  数据
- */
-@property (nonatomic, strong) NSMutableArray *data;
+@interface SettingsController : SettingsBaseController
+
 @end
