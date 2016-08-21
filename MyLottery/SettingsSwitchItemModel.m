@@ -35,7 +35,11 @@
 
 -(void)switchValueChanged:(id)sender {
     UISwitch *switchButton = (UISwitch*)sender;
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     BOOL isButtonOn = [switchButton isOn];
+    //保存设置
+    [defaults setBool:isButtonOn forKey:self.title];
+    [defaults synchronize];
     if (isButtonOn) {
         self.checkedBlock();
     }else {

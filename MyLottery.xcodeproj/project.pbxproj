@@ -63,6 +63,10 @@
 		98DE515F1D043C6900DF4CF4 /* more_project.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DE515D1D043C6900DF4CF4 /* more_project.json */; };
 		98DE51611D043CAC00DF4CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DE51601D043CAC00DF4CF4 /* Assets.xcassets */; };
 		98FEB9971D60CB6E0028A715 /* HtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEB9961D60CB6E0028A715 /* HtmlViewController.m */; };
+		98FEB99B1D69AEE10028A715 /* ProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEB99A1D69AEE10028A715 /* ProductController.m */; };
+		98FEB99F1D69AF0F0028A715 /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEB99E1D69AF0F0028A715 /* ProductModel.m */; };
+		98FEB9A21D69B4BB0028A715 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEB9A11D69B4BB0028A715 /* ProductCell.m */; };
+		98FEB9A51D69B4F10028A715 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FEB9A41D69B4F10028A715 /* ProductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +169,13 @@
 		98DE51601D043CAC00DF4CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98FEB9951D60CB6E0028A715 /* HtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlViewController.h; sourceTree = "<group>"; };
 		98FEB9961D60CB6E0028A715 /* HtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlViewController.m; sourceTree = "<group>"; };
+		98FEB9991D69AEE10028A715 /* ProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductController.h; sourceTree = "<group>"; };
+		98FEB99A1D69AEE10028A715 /* ProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductController.m; sourceTree = "<group>"; };
+		98FEB99D1D69AF0F0028A715 /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
+		98FEB99E1D69AF0F0028A715 /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
+		98FEB9A01D69B4BB0028A715 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		98FEB9A11D69B4BB0028A715 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		98FEB9A41D69B4F10028A715 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +253,7 @@
 		988C29841D5E2F93007E4123 /* Contotoller */ = {
 			isa = PBXGroup;
 			children = (
+				98FEB9981D69AEA50028A715 /* Product */,
 				988C29B01D60C508007E4123 /* Settings */,
 				988C29AF1D60C4FB007E4123 /* Help */,
 			);
@@ -251,6 +263,7 @@
 		988C29881D5E3DFE007E4123 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				98FEB99C1D69AEF80028A715 /* Product */,
 				988C29A81D60C35F007E4123 /* Help */,
 				988C29961D5E5299007E4123 /* Item */,
 				988C298E1D5E41F2007E4123 /* Group */,
@@ -270,6 +283,7 @@
 		988C29921D5E4DB2007E4123 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				98FEB9A31D69B4BF0028A715 /* Porduct */,
 				988C29931D5E4DEB007E4123 /* SettingsTableViewCell.h */,
 				988C29941D5E4DEB007E4123 /* SettingsTableViewCell.m */,
 			);
@@ -544,6 +558,34 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		98FEB9981D69AEA50028A715 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				98FEB9991D69AEE10028A715 /* ProductController.h */,
+				98FEB99A1D69AEE10028A715 /* ProductController.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		98FEB99C1D69AEF80028A715 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				98FEB99D1D69AF0F0028A715 /* ProductModel.h */,
+				98FEB99E1D69AF0F0028A715 /* ProductModel.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		98FEB9A31D69B4BF0028A715 /* Porduct */ = {
+			isa = PBXGroup;
+			children = (
+				98FEB9A01D69B4BB0028A715 /* ProductCell.h */,
+				98FEB9A11D69B4BB0028A715 /* ProductCell.m */,
+				98FEB9A41D69B4F10028A715 /* ProductCell.xib */,
+			);
+			name = Porduct;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -652,6 +694,7 @@
 			files = (
 				98DE514A1D043C5D00DF4CF4 /* jxy11_howto.html in Resources */,
 				98DE51401D043C5D00DF4CF4 /* credit_help.html in Resources */,
+				98FEB9A51D69B4F10028A715 /* ProductCell.xib in Resources */,
 				98DE51561D043C5D00DF4CF4 /* ssc_howto.html in Resources */,
 				98DE51451D043C5D00DF4CF4 /* help.html in Resources */,
 				98DE51501D043C5D00DF4CF4 /* pl3_howto.html in Resources */,
@@ -713,9 +756,12 @@
 				988C297D1D5E26CF007E4123 /* UIImage+Extension.m in Sources */,
 				988C29951D5E4DEB007E4123 /* SettingsTableViewCell.m in Sources */,
 				988C296E1D5B7561007E4123 /* MyTabBarButton.m in Sources */,
+				98FEB9A21D69B4BB0028A715 /* ProductCell.m in Sources */,
+				98FEB99F1D69AF0F0028A715 /* ProductModel.m in Sources */,
 				988C29991D5E5382007E4123 /* SettingsArrowItemModel.m in Sources */,
 				988C299F1D5E5983007E4123 /* SettingsSwitchItemModel.m in Sources */,
 				988C29871D5E2FB9007E4123 /* SettingsController.m in Sources */,
+				98FEB99B1D69AEE10028A715 /* ProductController.m in Sources */,
 				988C29B31D60C541007E4123 /* SettingsBaseController.m in Sources */,
 				98DE50F21D043A1900DF4CF4 /* AppDelegate.m in Sources */,
 				988C29AE1D60C470007E4123 /* HelpModel.m in Sources */,

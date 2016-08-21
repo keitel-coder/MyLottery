@@ -14,6 +14,7 @@
 #import "SettingsArrowItemModel.h"
 #import "SettingsGroupModel.h"
 #import "HelpController.h"
+#import "ProductController.h"
 
 @interface SettingsController()<UITableViewDelegate>
 
@@ -65,7 +66,7 @@
     [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreHelp" title:@"帮助" targetClass:[HelpController class]]];
     [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreShare" title:@"分享" targetClass:[HelpController class]]];
     [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreMessage" title:@"查看消息" targetClass:[HelpController class]]];
-    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreNetease" title:@"产品推荐" targetClass:[HelpController class]]];
+    [items addObject:[SettingsArrowItemModel initWithIcon:@"MoreNetease" title:@"产品推荐" targetClass:[ProductController class]]];
     SettingsBaseItemModel *updateItem=[SettingsBaseItemModel initWithIcon:@"MoreUpdate" title:@"检查新版本"];
     __unsafe_unretained typeof (self) selfVC=self;
     updateItem.click=^{

@@ -60,6 +60,8 @@
         //带开关的
         self.accessoryType=UITableViewCellAccessoryNone;
         UISwitch *st=[[UISwitch alloc]init];
+        NSUserDefaults *defaults= [NSUserDefaults standardUserDefaults];
+        [st setOn:[defaults boolForKey:self.data.title]];
         //添加开关事件
         SettingsSwitchItemModel *item=(SettingsSwitchItemModel*)self.data;
         [st addTarget:item action:@selector(switchValueChanged:) forControlEvents:UIControlEventValueChanged];
